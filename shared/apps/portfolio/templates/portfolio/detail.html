@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ project.title }}{% endblock %}
+{% block content %}
+<h1>{{ project.title }}</h1>
+<p>{{ project.description|linebreaks }}</p>
+{% if project.link %}<p><a href="{{ project.link }}">Odkaz</a></p>{% endif %}
+<p><a href="/projects/">← späť</a></p>
+{% endblock %}

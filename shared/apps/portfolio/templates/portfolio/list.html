@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Práce{% endblock %}
+{% block content %}
+<h1>Práce / Projekty</h1>
+<div class="grid">
+{% for p in projects %}
+  <div class="card">
+    <h3><a href="/projects/{{ p.slug }}/">{{ p.title }}</a></h3>
+    <p>{{ p.summary }}</p>
+    {% if p.created_at %}<small>{{ p.created_at }}</small>{% endif %}
+  </div>
+{% empty %}
+  <p>Zatiaľ nič.</p>
+{% endfor %}
+</div>
+{% endblock %}

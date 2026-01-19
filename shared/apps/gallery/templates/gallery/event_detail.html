@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ event.title }}{% endblock %}
+{% block content %}
+<h1>{{ event.title }}</h1>
+<p>{{ event.description|linebreaks }}</p>
+
+<div class="grid">
+  {% for img in event.images.all %}
+    <div class="card">
+      {% if img.title %}<strong>{{ img.title }}</strong>{% endif %}
+      <div>
+        <img src="{{ img.image.url }}" style="border-radius:12px;" />
+      </div>
+    </div>
+  {% empty %}
+    <p>Žiadne fotky.</p>
+  {% endfor %}
+</div>
+
+<p><a href="/gallery/">← späť</a></p>
+{% endblock %}

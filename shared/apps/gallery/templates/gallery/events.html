@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Galéria{% endblock %}
+{% block content %}
+<h1>Galéria</h1>
+<div class="grid">
+{% for e in events %}
+  <div class="card">
+    <h3><a href="/gallery/{{ e.slug }}/">{{ e.title }}</a></h3>
+    {% if e.date %}<small>{{ e.date }}</small>{% endif %}
+    <p>{{ e.description }}</p>
+  </div>
+{% empty %}
+  <p>Zatiaľ nič.</p>
+{% endfor %}
+</div>
+{% endblock %}
