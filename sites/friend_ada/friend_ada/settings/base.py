@@ -22,6 +22,7 @@ INSTALLED_APPS = [
 
     "shared.apps.portfolio",
     "shared.apps.gallery",
+    "shared.apps.programy",
 ]
 
 MIDDLEWARE = [

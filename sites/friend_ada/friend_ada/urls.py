@@ -9,6 +9,7 @@ urlpatterns = [
     path("about/", TemplateView.as_view(template_name="about.html"), name="about"),
     path("projects/", include("shared.apps.portfolio.urls")),
     path("gallery/", include("shared.apps.gallery.urls")),
+    path("programy/", include("shared.apps.programy.urls")),
     path("admin/", admin.site.urls),
 ]
 

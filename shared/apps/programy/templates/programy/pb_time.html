@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Programy{% endblock %}
+{% block content %}
+<h1>Programy</h1>
+<h2>Výpočet času (U, Th, Pb)</h2>
+
+<form method="post" class="card">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Vypočítať</button>
+</form>
+
+{% if out %}
+  <div class="card">
+    <strong>Výsledok (čas):</strong>
+    <pre>{{ out }}</pre>
+  </div>
+{% endif %}
+
+{% if err %}
+  <div class="card">
+    <strong>Chyba:</strong> {{ err }}
+  </div>
+{% endif %}
+{% endblock %}
