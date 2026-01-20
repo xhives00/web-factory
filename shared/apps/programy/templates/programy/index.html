@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Programy{% endblock %}
+{% block content %}
+<h1>Programy</h1>
+<ul>
+  {% for slug, p in programs.items %}
+    <li><a href="/programy/{{ slug }}/">{{ p.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
