@@ -2,7 +2,7 @@
 {% block title %}Programy{% endblock %}
 {% block content %}
 <h1>Programy</h1>
-<h2>Výpočet času (U, Th, Pb)</h2>
+<h2>Total-lead age determination in U-Th-Pb radiogenic system</h2>
 
 <form method="post" class="card">
   {% csrf_token %}
@@ -12,10 +12,71 @@
 
 {% if out %}
   <div class="card">
-    <strong>Výsledok (čas):</strong>
-    <pre>{{ out }}</pre>
+    <strong>Výsledok:</strong>
+    <div>{{ out }} rokov</div>
+    {% if out_ma %}<div>{{ out_ma|floatformat:3 }} Ma</div>{% endif %}
   </div>
 {% endif %}
+
+{% if samples %}
+  <div class="card">
+    <label><strong>Posun v čase:</strong> <span id="tLabel"></span></label>
+    <input id="tSlider" type="range"
+           min="0"
+           max="{{ samples|length|add:'-1' }}"
+           value="0"
+           style="width:100%">
+
+    <table border="1" cellpadding="6" style="margin-top:10px; width:100%">
+      <tr>
+        <th>t (roky)</th>
+        <th>t (Ma)</th>
+        <th>result</th>
+        <th>Pb_target</th>
+        <th>result / target</th>
+      </tr>
+      <tr>
+        <td id="tYears"></td>
+        <td id="tMa"></td>
+        <td id="res"></td>
+        <td id="target"></td>
+        <td id="ratio"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    const samples = {{ samples|safe }};
+    const pbTarget = {{ Pb_atoms|safe }};
+
+    const slider = document.getElementById("tSlider");
+    const tLabel = document.getElementById("tLabel");
+    const tYears = document.getElementById("tYears");
+    const tMa = document.getElementById("tMa");
+    const res = document.getElementById("res");
+    const target = document.getElementById("target");
+    const ratio = document.getElementById("ratio");
+
+    function update(idx) {
+      const s = samples[idx];
+      const years = Number(s.t);
+      const ma = years / 1e6;
+      const r = Number(s.result);
+      const t = Number(pbTarget);
+
+      tLabel.textContent = years.toExponential(6) + " rokov";
+      tYears.textContent = years.toExponential(6);
+      tMa.textContent = ma.toFixed(6);
+      res.textContent = r.toExponential(6);
+      target.textContent = t.toExponential(6);
+      ratio.textContent = (r / t).toFixed(6);
+    }
+
+    slider.addEventListener("input", () => update(Number(slider.value)));
+    update(0);
+  </script>
+{% endif %}
+
 
 {% if err %}
   <div class="card">
