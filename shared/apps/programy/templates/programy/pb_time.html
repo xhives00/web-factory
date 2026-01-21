@@ -7,12 +7,12 @@
 <form method="post" class="card">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">Vypočítať</button>
+  <button type="submit">Spočítat</button>
 </form>
 
 {% if out %}
   <div class="card">
-    <strong>Výsledok:</strong>
+    <strong>Výsledek:</strong>
     <div>{{ out }} rokov</div>
     {% if out_ma %}<div>{{ out_ma|floatformat:3 }} Ma</div>{% endif %}
   </div>
@@ -43,6 +43,7 @@
         <td id="ratio"></td>
       </tr>
     </table>
+    <label>zdroj: https://doi.org/10.1016/0012-821X(77)90060-7<span id="tLabel"></span></label>
   </div>
 
   <script>
