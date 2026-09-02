@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Programy — Vladimír Strunga{% endblock %}
+
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380;0,9..144,560;1,9..144,460&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'theme.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="wrap programy-page">
+  <div class="section-head"><span class="num">06</span><h2>Programy</h2></div>
+  <ul class="pubs-more" style="list-style:none; padding:0;">
+    {% for slug, p in programs.items %}
+      <li style="padding:10px 0; border-top:1px solid var(--line);"><a href="/programy/{{ slug }}/">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

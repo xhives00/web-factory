@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Výpočet stáří U–Th–Pb systému — Vladimír Strunga{% endblock %}
+
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380;0,9..144,560;1,9..144,460&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'theme.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="wrap programy-page">
+  <div class="section-head"><span class="num">06</span><h2>Programy</h2></div>
+  <p class="mk" style="font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--accent); letter-spacing:.06em;">VÝPOČETNÍ NÁSTROJ</p>
+  <h3 style="font-family:'Fraunces',serif; font-weight:560; font-size:1.3rem; margin-top:6px;">Total-lead age determination in U-Th-Pb radiogenic system</h3>
+
+  <form method="post" class="card tool-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="tool-link" style="border:1px solid var(--accent); background:none; cursor:pointer;">Spočítat</button>
+  </form>
+
+  {% if out %}
+    <div class="card">
+      <strong>Výsledek:</strong>
+      <div>{{ out }} rokov</div>
+      {% if out_ma %}<div>{{ out_ma|floatformat:3 }} Ma</div>{% endif %}
+    </div>
+  {% endif %}
+
+  {% if samples %}
+    <div class="card">
+      <label><strong>Posun v čase:</strong> <span id="tLabel"></span></label>
+      <input id="tSlider" type="range"
+             min="0"
+             max="{{ samples|length|add:'-1' }}"
+             value="0"
+             style="width:100%">
+
+      <table border="1" cellpadding="6" style="margin-top:10px; width:100%">
+        <tr>
+          <th>t (roky)</th>
+          <th>t (Ma)</th>
+          <th>result</th>
+          <th>Pb_target</th>
+          <th>result / target</th>
+        </tr>
+        <tr>
+          <td id="tYears"></td>
+          <td id="tMa"></td>
+          <td id="res"></td>
+          <td id="target"></td>
+          <td id="ratio"></td>
+        </tr>
+      </table>
+      <label>zdroj: https://doi.org/10.1016/0012-821X(77)90060-7<span id="tLabel"></span></label>
+    </div>
+
+    <script>
+      const samples = {{ samples|safe }};
+      const pbTarget = {{ Pb_atoms|safe }};
+
+      const slider = document.getElementById("tSlider");
+      const tLabel = document.getElementById("tLabel");
+      const tYears = document.getElementById("tYears");
+      const tMa = document.getElementById("tMa");
+      const res = document.getElementById("res");
+      const target = document.getElementById("target");
+      const ratio = document.getElementById("ratio");
+
+      function update(idx) {
+        const s = samples[idx];
+        const years = Number(s.t);
+        const ma = years / 1e6;
+        const r = Number(s.result);
+        const t = Number(pbTarget);
+
+        tLabel.textContent = years.toExponential(6) + " rokov";
+        tYears.textContent = years.toExponential(6);
+        tMa.textContent = ma.toFixed(6);
+        res.textContent = r.toExponential(6);
+        target.textContent = t.toExponential(6);
+        ratio.textContent = (r / t).toFixed(6);
+      }
+
+      slider.addEventListener("input", () => update(Number(slider.value)));
+      update(0);
+    </script>
+  {% endif %}
+
+  {% if err %}
+    <div class="card">
+      <strong>Chyba:</strong> {{ err }}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

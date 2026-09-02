@@ -1,0 +1,40 @@
+<footer>
+  <div class="wrap">
+    <small>© VLADIMÍR STRUNGA — <span id="yr"></span></small>
+    <small>GEOLOGIE / MINERALOGIE / GEOCHEMIE</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const btn = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function label(){
+    const t = root.getAttribute('data-theme');
+    if(t === 'dark') btn.textContent = 'TMAVÝ REŽIM';
+    else if(t === 'light') btn.textContent = 'SVĚTLÝ REŽIM';
+    else btn.textContent = matchMedia('(prefers-color-scheme: dark)').matches ? 'TMAVÝ REŽIM' : 'SVĚTLÝ REŽIM';
+  }
+  btn.addEventListener('click', () => {
+    const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const cur = root.getAttribute('data-theme') || (sysDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+    label();
+  });
+  label();
+
+  const menuBtn = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const mobileQuery = matchMedia('(max-width: 720px)');
+
+  function setMenu(open){
+    navLinks.classList.toggle('is-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.textContent = open ? 'ZAVŘÍT' : 'MENU';
+  }
+  menuBtn.addEventListener('click', () => setMenu(!navLinks.classList.contains('is-open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (mobileQuery.matches) setMenu(false);
+  }));
+  mobileQuery.addEventListener('change', () => setMenu(false));
+</script>
