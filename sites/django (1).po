@@ -1,0 +1,565 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 18:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: shared/apps/programy/views.py:8
+msgid "Výpočet času (U, Th, Pb)"
+msgstr "Calcul de l'âge (U, Th, Pb)"
+
+#: sites/friend_ada/theme/templates/about.html:3
+#: sites/friend_ada/theme/templates/about.html:5
+msgid "O mně"
+msgstr "À propos"
+
+#: sites/friend_ada/theme/templates/about.html:6
+msgid "Vladimír Strunga — geolog, mineralog a geochemik."
+msgstr "Vladimír Strunga — géologue, minéralogiste et géochimiste."
+
+#: sites/friend_ada/theme/templates/home.html:16
+msgid "Geologie · Mineralogie · Geochemie"
+msgstr "Géologie · Minéralogie · Géochimie"
+
+#: sites/friend_ada/theme/templates/home.html:18
+msgid ""
+"Zkoumá, jak čas a záření zapisují svůj příběh do hornin a minerálů — od\n"
+"        uranonosných jílovců severočeské křídy po tektity z náhorní plošiny Bolaven v Laosu.\n"
+"        Jedenáct let strávil v týmu neutronové aktivační analýzy Ústavu jaderné fyziky AV ČR v Řeži;\n"
+"        dnes se stejnou pozorností věnuje obnově mokřadů v krajině, kde kdysi měřil poločasy rozpadu."
+msgstr ""
+"Il étudie comment le temps et le rayonnement inscrivent leur histoire dans "
+"les roches et les minéraux — des argilites uranifères du Crétacé de Bohême "
+"du Nord aux tectites du plateau des Bolaven au Laos. Il a passé onze ans au "
+"sein de l'équipe d'analyse par activation neutronique de l'Institut de "
+"physique nucléaire de l'Académie des sciences à Řež ; aujourd'hui, il porte "
+"la même attention à la restauration des zones humides dans un paysage où il "
+"mesurait autrefois les périodes radioactives."
+
+#: sites/friend_ada/theme/templates/home.html:24
+msgid "Vladimír Strunga v terénu v horách"
+msgstr "Vladimír Strunga sur le terrain, en montagne"
+
+#: sites/friend_ada/theme/templates/home.html:25
+msgid "V terénu"
+msgstr "Sur le terrain"
+
+#: sites/friend_ada/theme/templates/home.html:33
+#: sites/friend_ada/theme/templates/partials/nav.html:6
+msgid "Profil"
+msgstr "Profil"
+
+#: sites/friend_ada/theme/templates/home.html:35
+msgid ""
+"Vystudoval obor geologie, mineralogie a geochemie na Ústavu geologických věd Přírodovědecké\n"
+"      fakulty Masarykovy univerzity v&nbsp;Brně a na Ústavu geochemie, mineralogie a nerostných zdrojů\n"
+"      Přírodovědecké fakulty Univerzity Karlovy v&nbsp;Praze. Jedenáct let působil ve skupině neutronové\n"
+"      aktivační analýzy Ústavu jaderné fyziky AV&nbsp;ČR v&nbsp;Řeži, kde se věnoval ozářením indukované\n"
+"      analýze štěpných stop uranu a plutonia v&nbsp;mikročásticích a gama spektrometrii."
+msgstr ""
+"Il a étudié la géologie, la minéralogie et la géochimie à l'Institut des "
+"sciences géologiques de la Faculté des sciences de l'Université Masaryk à "
+"Brno, puis à l'Institut de géochimie, minéralogie et ressources minérales de"
+" la Faculté des sciences de l'Université Charles à Prague. Pendant onze ans,"
+" il a travaillé au sein du groupe d'analyse par activation neutronique de "
+"l'Institut de physique nucléaire de l'Académie des sciences à Řež, où il "
+"s'est consacré à l'analyse des traces de fission de l'uranium et du "
+"plutonium dans les microparticules induites par irradiation, ainsi qu'à la "
+"spectrométrie gamma."
+
+#: sites/friend_ada/theme/templates/home.html:42
+msgid ""
+"Zabývá se geologií, mineralogií, geochemií a vědami o Zemi obecně, se zaměřením na environmentální\n"
+"      otázky spojené s&nbsp;klimatickou změnou a širším vlivem člověka na krajinu — především budováním\n"
+"      vodních biotopů, ekologickým lesnictvím a zemědělstvím."
+msgstr ""
+"Il s'intéresse à la géologie, à la minéralogie, à la géochimie et aux "
+"sciences de la Terre en général, avec un accent sur les enjeux "
+"environnementaux liés au changement climatique et à l'impact plus large de "
+"l'homme sur le paysage — notamment par la création de biotopes humides, la "
+"foresterie et l'agriculture écologiques."
+
+#: sites/friend_ada/theme/templates/home.html:49
+msgid "Odborné zaměření"
+msgstr "Domaines d'expertise"
+
+#: sites/friend_ada/theme/templates/home.html:52
+msgid "DATOVÁNÍ"
+msgstr "DATATION"
+
+#: sites/friend_ada/theme/templates/home.html:53
+msgid "Jaderná geochemie"
+msgstr "Géochimie nucléaire"
+
+#: sites/friend_ada/theme/templates/home.html:54
+msgid ""
+"Neutronová aktivační analýza, analýza štěpných stop U/Pu, gama spektrometrie"
+" a U–Th–Pb datovací systémy."
+msgstr ""
+"Analyse par activation neutronique, analyse des traces de fission U/Pu, "
+"spectrométrie gamma et systèmes de datation U–Th–Pb."
+
+#: sites/friend_ada/theme/templates/home.html:57
+msgid "TERÉN"
+msgstr "TERRAIN"
+
+#: sites/friend_ada/theme/templates/home.html:58
+msgid "Mineralogie a gemologie"
+msgstr "Minéralogie et gemmologie"
+
+#: sites/friend_ada/theme/templates/home.html:59
+msgid ""
+"Mikroskopie, refraktometrie, UV-fluorescence a XRF analýza minerálů, drahých"
+" kamenů a kovů."
+msgstr ""
+"Microscopie, réfractométrie, fluorescence UV et analyse XRF des minéraux, "
+"pierres précieuses et métaux."
+
+#: sites/friend_ada/theme/templates/home.html:62
+msgid "KOSMOCHEMIE"
+msgstr "COSMOCHIMIE"
+
+#: sites/friend_ada/theme/templates/home.html:63
+msgid "Impaktní krátery a tektity"
+msgstr "Cratères d'impact et tectites"
+
+#: sites/friend_ada/theme/templates/home.html:64
+msgid ""
+"Původ australasijských tektitů — gravimetrické a magnetické indikátory, "
+"hledání mateřského kráteru."
+msgstr ""
+"Origine des tectites australasiennes — indicateurs gravimétriques et "
+"magnétiques, recherche du cratère parent."
+
+#: sites/friend_ada/theme/templates/home.html:67
+msgid "KRAJINA"
+msgstr "PAYSAGE"
+
+#: sites/friend_ada/theme/templates/home.html:68
+msgid "Praktická ekologie"
+msgstr "Écologie appliquée"
+
+#: sites/friend_ada/theme/templates/home.html:69
+msgid ""
+"Budování mokřadních biotopů, ekologické lesnictví a zemědělství v kontextu "
+"klimatické změny."
+msgstr ""
+"Création de biotopes humides, foresterie et agriculture écologiques dans le "
+"contexte du changement climatique."
+
+#: sites/friend_ada/theme/templates/home.html:75
+#: sites/friend_ada/theme/templates/partials/nav.html:8
+msgid "Kariéra"
+msgstr "Carrière"
+
+#: sites/friend_ada/theme/templates/home.html:79
+msgid "Doktorské studium — Univerzita Karlova, Praha"
+msgstr "Doctorat — Université Charles, Prague"
+
+#: sites/friend_ada/theme/templates/home.html:80
+msgid ""
+"Ústav geochemie, mineralogie a nerostných zdrojů, PřF UK. Disertace: "
+"Radiační efekty v organické hmotě U-mineralizace."
+msgstr ""
+"Institut de géochimie, minéralogie et ressources minérales, Faculté des "
+"sciences. Thèse : effets du rayonnement dans la matière organique de la "
+"minéralisation uranifère."
+
+#: sites/friend_ada/theme/templates/home.html:84
+msgid "Ústav jaderné fyziky AV ČR, Řež"
+msgstr "Institut de physique nucléaire de l'Académie des sciences, Řež"
+
+#: sites/friend_ada/theme/templates/home.html:85
+msgid ""
+"Neutronová aktivační analýza, ozářením indukovaná analýza štěpných stop "
+"uranu a plutonia v mikročásticích, gama spektrometrie."
+msgstr ""
+"Analyse par activation neutronique, analyse des traces de fission de "
+"l'uranium et du plutonium dans les microparticules induites par irradiation,"
+" spectrométrie gamma."
+
+#: sites/friend_ada/theme/templates/home.html:89
+msgid "Cabrha Team — mineralog, gemolog"
+msgstr "Cabrha Team — minéralogiste, gemmologue"
+
+#: sites/friend_ada/theme/templates/home.html:90
+msgid ""
+"Mikroskopie, refraktometrie, UV-fluorescence, XRF analýza minerálů a kovů."
+msgstr ""
+"Microscopie, réfractométrie, fluorescence UV, analyse XRF des minéraux et "
+"des métaux."
+
+#: sites/friend_ada/theme/templates/home.html:94
+msgid "Přírodovědecká fakulta Masarykovy univerzity, Brno"
+msgstr "Faculté des sciences, Université Masaryk, Brno"
+
+#: sites/friend_ada/theme/templates/home.html:95
+msgid ""
+"Junior researcher — příprava a modifikace materiálů, mikroanalytické "
+"techniky EMP, LA-ICP-MS, μ-PIXE."
+msgstr ""
+"Chercheur junior — préparation et modification de matériaux, techniques "
+"microanalytiques EMP, LA-ICP-MS, μ-PIXE."
+
+#: sites/friend_ada/theme/templates/home.html:99
+msgid "DIAMO GEAM, Dolní Rožínka"
+msgstr "DIAMO GEAM, Dolní Rožínka"
+
+#: sites/friend_ada/theme/templates/home.html:100
+msgid "Hornik-radiometrista — sběr a dozimetrie rudných vzorků."
+msgstr ""
+"Mineur-radiométriste — collecte et dosimétrie d'échantillons de minerai."
+
+#: sites/friend_ada/theme/templates/home.html:104
+msgid "Mgr. — Masarykova univerzita, Brno"
+msgstr "Mgr. (maîtrise) — Université Masaryk, Brno"
+
+#: sites/friend_ada/theme/templates/home.html:105
+msgid "Ústav geologických věd, obor geologie, mineralogie a geochemie."
+msgstr ""
+"Institut des sciences géologiques, spécialité géologie, minéralogie et "
+"géochimie."
+
+#: sites/friend_ada/theme/templates/home.html:111
+msgid "Vybrané publikace"
+msgstr "Publications sélectionnées"
+
+#: sites/friend_ada/theme/templates/home.html:149
+msgid "A více než 15 dalších publikací ve vědeckých časopisech a sbornících —"
+msgstr ""
+"Et plus de 15 autres publications dans des revues et actes scientifiques —"
+
+#: sites/friend_ada/theme/templates/home.html:149
+msgid "celý seznam na vyžádání"
+msgstr "liste complète sur demande"
+
+#: sites/friend_ada/theme/templates/home.html:153
+msgid "Přednášky a workshopy"
+msgstr "Conférences et ateliers"
+
+#: sites/friend_ada/theme/templates/home.html:154
+msgid "Audiovizuální přednášky a terénní workshopy pro školy, spolky i firmy."
+msgstr ""
+"Conférences audiovisuelles et ateliers de terrain pour les écoles, "
+"associations et entreprises."
+
+#: sites/friend_ada/theme/templates/home.html:159
+msgid "Hledání a poznávání minerálů pro radost a poučení"
+msgstr ""
+"Trouver et reconnaître les minéraux, pour le plaisir et la connaissance"
+
+#: sites/friend_ada/theme/templates/home.html:160
+msgid ""
+"Praktické seznámení s určováním minerálů — od rýžování po fluorescenci pod "
+"UV lampou."
+msgstr ""
+"Une introduction pratique à l'identification des minéraux — du lavage à la "
+"batée à la fluorescence sous lampe UV."
+
+#: sites/friend_ada/theme/templates/home.html:166
+msgid "Geologická historie a mineralogické zajímavosti Čech a Moravy"
+msgstr ""
+"Histoire géologique et curiosités minéralogiques de Bohême et de Moravie"
+
+#: sites/friend_ada/theme/templates/home.html:167
+msgid ""
+"Přehled geologického vývoje regionu na příkladech konkrétních lokalit a "
+"nálezů."
+msgstr ""
+"Un aperçu du développement géologique de la région à travers des sites et "
+"des découvertes concrets."
+
+#: sites/friend_ada/theme/templates/home.html:173
+msgid "Praktická ekologie a budování mokřadních biotopů z pohledu geologa"
+msgstr ""
+"Écologie appliquée et création de biotopes humides, le regard d'un géologue"
+
+#: sites/friend_ada/theme/templates/home.html:174
+msgid ""
+"Proč a jak budovat vodní biotopy v krajině — pohled geologa na ekologickou "
+"obnovu."
+msgstr ""
+"Pourquoi et comment créer des biotopes humides dans le paysage — le regard "
+"d'un géologue sur la restauration écologique."
+
+#: sites/friend_ada/theme/templates/home.html:181
+#: sites/friend_ada/theme/templates/partials/nav.html:11
+#: sites/friend_ada/theme/templates/programy/index.html:3
+#: sites/friend_ada/theme/templates/programy/index.html:14
+#: sites/friend_ada/theme/templates/programy/pb_time.html:14
+msgid "Programy"
+msgstr "Outils"
+
+#: sites/friend_ada/theme/templates/home.html:184
+#: sites/friend_ada/theme/templates/programy/pb_time.html:15
+msgid "VÝPOČETNÍ NÁSTROJ"
+msgstr "OUTIL DE CALCUL"
+
+#: sites/friend_ada/theme/templates/home.html:185
+#: sites/friend_ada/theme/templates/programy/pb_time.html:3
+msgid "Výpočet stáří U–Th–Pb systému"
+msgstr "Calcul de l'âge du système U–Th–Pb"
+
+#: sites/friend_ada/theme/templates/home.html:186
+msgid ""
+"Radiometrické datování ze vstupních koncentrací uranu, thoria a olova — stejný nástroj,\n"
+"          na který se odkazuje v publikacích. Aktuálně probíhá kontrola přesnosti výpočtu pro okrajové\n"
+"          vstupní hodnoty."
+msgstr ""
+"Datation radiométrique à partir des concentrations d'entrée en uranium, "
+"thorium et plomb — le même outil que celui cité dans les publications. La "
+"précision du calcul pour les valeurs d'entrée extrêmes est actuellement en "
+"cours de vérification."
+
+#: sites/friend_ada/theme/templates/home.html:191
+msgid "Otevřít kalkulačku →"
+msgstr "Ouvrir le calculateur →"
+
+#: sites/friend_ada/theme/templates/home.html:196
+msgid "Terén v obrazech"
+msgstr "Le terrain en images"
+
+#: sites/friend_ada/theme/templates/home.html:198
+msgid "Odkryv s vyznačenými zónami alterace"
+msgstr "Affleurement avec zones d'altération marquées"
+
+#: sites/friend_ada/theme/templates/home.html:198
+msgid "Odkryv s vyznačenými zónami alterace organické hmoty"
+msgstr "Affleurement avec zones d'altération de la matière organique marquées"
+
+#: sites/friend_ada/theme/templates/home.html:199
+msgid "Sekundárně vykrystalizovaný křemen"
+msgstr "Quartz recristallisé secondairement"
+
+#: sites/friend_ada/theme/templates/home.html:200
+msgid "Terénní exkurze na geologickém odkryvu"
+msgstr "Excursion de terrain sur un affleurement géologique"
+
+#: sites/friend_ada/theme/templates/home.html:200
+msgid "Terénní exkurze na odkryvu"
+msgstr "Excursion sur l'affleurement"
+
+#: sites/friend_ada/theme/templates/home.html:201
+msgid "Detail vrstevnatého odkryvu"
+msgstr "Détail d'un affleurement stratifié"
+
+#: sites/friend_ada/theme/templates/home.html:202
+msgid "Vrstevnatý odkryv zarostlý kapradinami"
+msgstr "Affleurement stratifié envahi de fougères"
+
+#: sites/friend_ada/theme/templates/home.html:203
+msgid "Kladívko u žilky s bílými výkvěty"
+msgstr "Marteau près d'une veine à efflorescences blanches"
+
+#: sites/friend_ada/theme/templates/home.html:203
+msgid "Žilka s bílými výkvěty vedle bitumenové výplně"
+msgstr "Veine à efflorescences blanches à côté d'un remplissage bitumineux"
+
+#: sites/friend_ada/theme/templates/home.html:204
+msgid "Detail bitumenové výplně v puklinách"
+msgstr "Détail du remplissage bitumineux dans les fractures"
+
+#: sites/friend_ada/theme/templates/home.html:204
+msgid "Detail bitumenové výplně v puklinách horniny"
+msgstr "Détail du remplissage bitumineux dans les fractures de la roche"
+
+#: sites/friend_ada/theme/templates/home.html:205
+msgid "Puklinová výplň s bitumenem"
+msgstr "Remplissage de fracture au bitume"
+
+#: sites/friend_ada/theme/templates/home.html:206
+msgid "Detail žilky s mincí pro měřítko"
+msgstr "Détail d'une veine avec une pièce pour l'échelle"
+
+#: sites/friend_ada/theme/templates/home.html:207
+msgid "Odkryv se sítem a vzorkovnicemi"
+msgstr "Affleurement avec tamis et flacons à échantillons"
+
+#: sites/friend_ada/theme/templates/home.html:207
+msgid "Odkryv sekundárních minerálů se sítem a vzorkovnicemi"
+msgstr ""
+"Affleurement de minéraux secondaires avec tamis et flacons à échantillons"
+
+#: sites/friend_ada/theme/templates/home.html:208
+msgid "Ražba do jílovité stěny odkryvu"
+msgstr "Creusement dans la paroi argileuse de l'affleurement"
+
+#: sites/friend_ada/theme/templates/home.html:209
+msgid "Krystaly křemene, pohled shora"
+msgstr "Cristaux de quartz, vue de dessus"
+
+#: sites/friend_ada/theme/templates/home.html:209
+msgid "Krystaly křemene — pohled shora"
+msgstr "Cristaux de quartz — vue de dessus"
+
+#: sites/friend_ada/theme/templates/home.html:210
+msgid "Krystaly křemene, detail trsu"
+msgstr "Cristaux de quartz, détail d'une druse"
+
+#: sites/friend_ada/theme/templates/home.html:210
+msgid "Krystaly křemene — detail trsu"
+msgstr "Cristaux de quartz — détail d'une druse"
+
+#: sites/friend_ada/theme/templates/home.html:211
+msgid "Drobný nález v sítu"
+msgstr "Une petite trouvaille dans le tamis"
+
+#: sites/friend_ada/theme/templates/home.html:212
+msgid "Fluorescence minerálu pod UV lampou"
+msgstr "Fluorescence d'un minéral sous lampe UV"
+
+#: sites/friend_ada/theme/templates/home.html:212
+msgid "Fluorescence minerálu pod UV lampou — týž kámen, jiné světlo"
+msgstr ""
+"Fluorescence d'un minéral sous lampe UV — la même pierre, une autre lumière"
+
+#: sites/friend_ada/theme/templates/home.html:213
+msgid "Rýžované zlato a granáty na měřítku"
+msgstr "Or et grenats lavés à la batée, à l'échelle"
+
+#: sites/friend_ada/theme/templates/home.html:213
+msgid "Rýžované zlato a granáty, měřítko ČGS"
+msgstr "Or et grenats lavés à la batée, échelle du Service géologique tchèque"
+
+#: sites/friend_ada/theme/templates/home.html:214
+msgid "Rýžování v potoce"
+msgstr "Lavage à la batée dans un ruisseau"
+
+#: sites/friend_ada/theme/templates/home.html:214
+msgid "Rýžování v terénu"
+msgstr "Lavage à la batée sur le terrain"
+
+#: sites/friend_ada/theme/templates/home.html:215
+msgid "Budovaný mokřadní biotop v lese"
+msgstr "Un biotope humide en construction en forêt"
+
+#: sites/friend_ada/theme/templates/home.html:215
+msgid "Budovaný mokřadní biotop"
+msgstr "Un biotope humide en construction"
+
+#: sites/friend_ada/theme/templates/home.html:216
+msgid "Skokan v ruce u obnoveného mokřadu"
+msgstr "Une grenouille dans la main près d'une zone humide restaurée"
+
+#: sites/friend_ada/theme/templates/home.html:216
+msgid "Obyvatel obnoveného mokřadu"
+msgstr "Un habitant de la zone humide restaurée"
+
+#: sites/friend_ada/theme/templates/home.html:217
+msgid "Terénní výprava s dětmi u potoka"
+msgstr "Une sortie de terrain avec des enfants au bord d'un ruisseau"
+
+#: sites/friend_ada/theme/templates/home.html:217
+msgid "Terénní výprava s nejmenšími pomocníky"
+msgstr "Une sortie de terrain avec les plus petits assistants"
+
+#: sites/friend_ada/theme/templates/home.html:229
+#: sites/friend_ada/theme/templates/partials/nav.html:13
+msgid "Kontakt"
+msgstr "Contact"
+
+#: sites/friend_ada/theme/templates/home.html:232
+msgid "Pro přednášky, workshopy, spolupráci nebo dotazy k výzkumu."
+msgstr ""
+"Pour des conférences, ateliers, collaborations ou questions de recherche."
+
+#: sites/friend_ada/theme/templates/home.html:238
+msgid "Napsat e-mail →"
+msgstr "Envoyer un e-mail →"
+
+#: sites/friend_ada/theme/templates/partials/footer.html:5
+msgid "GEOLOGIE / MINERALOGIE / GEOCHEMIE"
+msgstr "GÉOLOGIE / MINÉRALOGIE / GÉOCHIMIE"
+
+#: sites/friend_ada/theme/templates/partials/footer.html:11
+#: sites/friend_ada/theme/templates/partials/nav.html:24
+msgid "SVĚTLÝ REŽIM"
+msgstr "MODE CLAIR"
+
+#: sites/friend_ada/theme/templates/partials/footer.html:12
+msgid "TMAVÝ REŽIM"
+msgstr "MODE SOMBRE"
+
+#: sites/friend_ada/theme/templates/partials/footer.html:29
+#: sites/friend_ada/theme/templates/partials/nav.html:23
+msgid "MENU"
+msgstr "MENU"
+
+#: sites/friend_ada/theme/templates/partials/footer.html:30
+msgid "ZAVŘÍT"
+msgstr "FERMER"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:7
+msgid "Zaměření"
+msgstr "Spécialisation"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:9
+msgid "Publikace"
+msgstr "Publications"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:10
+msgid "Přednášky"
+msgstr "Conférences"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:12
+msgid "Galerie"
+msgstr "Galerie"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:23
+msgid "Otevřít menu"
+msgstr "Ouvrir le menu"
+
+#: sites/friend_ada/theme/templates/partials/nav.html:24
+msgid "Přepnout světlý a tmavý režim"
+msgstr "Basculer entre le mode clair et sombre"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:21
+msgid "Spočítat"
+msgstr "Calculer"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:26
+msgid "Výsledek:"
+msgstr "Résultat :"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:27
+#: sites/friend_ada/theme/templates/programy/pb_time.html:61
+msgid "rokov"
+msgstr "ans"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:34
+msgid "Posun v čase:"
+msgstr "Décalage temporel :"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:43
+msgid "t (roky)"
+msgstr "t (années)"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:45
+msgid "result"
+msgstr "résultat"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:47
+msgid "result / target"
+msgstr "résultat / cible"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:57
+msgid "zdroj:"
+msgstr "source :"
+
+#: sites/friend_ada/theme/templates/programy/pb_time.html:95
+msgid "Chyba:"
+msgstr "Erreur :"
