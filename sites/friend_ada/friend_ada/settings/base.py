@@ -29,6 +29,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -66,7 +67,13 @@ DATABASES = {
     }
 }
 
-LANGUAGE_CODE = "sk"
+LANGUAGE_CODE = "cs"
+LANGUAGES = [
+    ("cs", "Čeština"),
+    ("en", "English"),
+    ("fr", "Français"),
+]
+LOCALE_PATHS = [SITE_DIR / "locale"]
 TIME_ZONE = "Europe/Prague"
 USE_I18N = True
 USE_TZ = True
@@ -87,6 +94,8 @@ STORAGES = {
 }
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = SITE_DIR / ".media"
+# On Railway the container filesystem is ephemeral — point DJANGO_MEDIA_ROOT at a
+# mounted Volume's path (e.g. /data/media) so photos added via /admin survive redeploys.
+MEDIA_ROOT = Path(os.getenv("DJANGO_MEDIA_ROOT", str(SITE_DIR / ".media")))
 
 SITE_BRAND = "Kamarát 1 – osobný web"

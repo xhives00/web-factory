@@ -1,10 +1,11 @@
 from django.http import Http404
 from django.shortcuts import render
+from django.utils.translation import gettext_lazy as _
 from .programs.pb_time import view_pb_time   # napr. rozdelíš programy do modulov
 
 PROGRAMS = {
     "pb-time": {
-        "title": "Výpočet času (U, Th, Pb)",
+        "title": _("Výpočet času (U, Th, Pb)"),
         "view": view_pb_time,
     },
     # neskôr pridáš ďalšie:

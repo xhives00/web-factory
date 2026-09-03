@@ -1,0 +1,45 @@
+{% load i18n %}
+<footer>
+  <div class="wrap">
+    <small>© VLADIMÍR STRUNGA — <span id="yr"></span></small>
+    <small>{% trans "GEOLOGIE / MINERALOGIE / GEOCHEMIE" %}</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const LABEL_LIGHT = "{% trans 'SVĚTLÝ REŽIM' %}";
+  const LABEL_DARK = "{% trans 'TMAVÝ REŽIM' %}";
+  const btn = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function label(){
+    const t = root.getAttribute('data-theme');
+    if(t === 'dark') btn.textContent = LABEL_DARK;
+    else if(t === 'light') btn.textContent = LABEL_LIGHT;
+    else btn.textContent = matchMedia('(prefers-color-scheme: dark)').matches ? LABEL_DARK : LABEL_LIGHT;
+  }
+  btn.addEventListener('click', () => {
+    const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const cur = root.getAttribute('data-theme') || (sysDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+    label();
+  });
+  label();
+
+  const LABEL_MENU = "{% trans 'MENU' %}";
+  const LABEL_CLOSE = "{% trans 'ZAVŘÍT' %}";
+  const menuBtn = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const mobileQuery = matchMedia('(max-width: 720px)');
+
+  function setMenu(open){
+    navLinks.classList.toggle('is-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.textContent = open ? LABEL_CLOSE : LABEL_MENU;
+  }
+  menuBtn.addEventListener('click', () => setMenu(!navLinks.classList.contains('is-open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (mobileQuery.matches) setMenu(false);
+  }));
+  mobileQuery.addEventListener('change', () => setMenu(false));
+</script>

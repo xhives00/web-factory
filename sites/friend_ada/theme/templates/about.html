@@ -1,6 +1,7 @@
 {% extends "base.html" %}
-{% block title %}O mne{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "O mně" %}{% endblock %}
 {% block content %}
-<h1>O mne</h1>
-<p>Sem si daj krátky text o človeku.</p>
+<h1>{% trans "O mně" %}</h1>
+<p>{% trans "Vladimír Strunga — geolog, mineralog a geochemik." %}</p>
 {% endblock %}
