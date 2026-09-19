@@ -1,27 +1,52 @@
 {% load static i18n %}
+{% url 'home' as home_url %}
 <nav class="topnav">
   <div class="topnav-inner">
-    <a href="#top" class="brand">V<b>·</b>STRUNGA</a>
+    <a href="{{ home_url }}#top" class="brand">V<b>·</b>STRUNGA</a>
     <div class="navlinks" id="navLinks">
-      <a href="#profil">{% trans "Profil" %}</a>
-      <a href="#zamereni">{% trans "Zaměření" %}</a>
-      <a href="#kariera">{% trans "Kariéra" %}</a>
-      <a href="#publikace">{% trans "Publikace" %}</a>
-      <a href="#prednasky">{% trans "Přednášky" %}</a>
-      <a href="#programy">{% trans "Programy" %}</a>
-      <a href="#galerie">{% trans "Galerie" %}</a>
-      <a href="#kontakt">{% trans "Kontakt" %}</a>
+      <a href="{{ home_url }}#prednasky">{% trans "Přednášky" %}</a>
+      <a href="{{ home_url }}#publikace">{% trans "Publikace" %}</a>
+      <a href="{{ home_url }}#galerie">{% trans "Galerie" %}</a>
+      <a href="{{ home_url }}#programy">{% trans "Programy" %}</a>
+      <a href="{{ home_url }}#kontakt">{% trans "Kontakt" %}</a>
     </div>
     <div class="right-controls">
       <form action="{% url 'set_language' %}" method="post" class="langswitch">
         {% csrf_token %}
         <input name="next" type="hidden" value="{{ request.path }}">
-        <button name="language" value="cs" type="submit" class="langbtn{% if LANGUAGE_CODE == 'cs' %} is-active{% endif %}" aria-label="Čeština">🇨🇿<span class="code"> CS</span></button>
-        <button name="language" value="en" type="submit" class="langbtn{% if LANGUAGE_CODE == 'en' %} is-active{% endif %}" aria-label="English">🇬🇧<span class="code"> EN</span></button>
-        <button name="language" value="fr" type="submit" class="langbtn{% if LANGUAGE_CODE == 'fr' %} is-active{% endif %}" aria-label="Français">🇫🇷<span class="code"> FR</span></button>
+        <button name="language" value="cs" type="submit" class="langbtn{% if LANGUAGE_CODE == 'cs' %} is-active{% endif %}" aria-label="Čeština">
+          <svg class="flag" viewBox="0 0 20 14" width="18" height="13" aria-hidden="true" focusable="false">
+            <rect width="20" height="14" fill="#fff"/>
+            <rect width="20" height="7" y="7" fill="#d7141a"/>
+            <polygon points="0,0 0,14 10,7" fill="#11457e"/>
+          </svg>
+          <span class="code"> CS</span>
+        </button>
+        <button name="language" value="en" type="submit" class="langbtn{% if LANGUAGE_CODE == 'en' %} is-active{% endif %}" aria-label="English">
+          <svg class="flag" viewBox="0 0 20 14" width="18" height="13" aria-hidden="true" focusable="false">
+            <rect width="20" height="14" fill="#00247d"/>
+            <path d="M0,0 L20,14 M20,0 L0,14" stroke="#fff" stroke-width="2.6"/>
+            <path d="M0,0 L20,14 M20,0 L0,14" stroke="#cf142b" stroke-width="1.1"/>
+            <rect x="8" width="4" height="14" fill="#fff"/>
+            <rect y="5" width="20" height="4" fill="#fff"/>
+            <rect x="8.7" width="2.6" height="14" fill="#cf142b"/>
+            <rect y="5.7" width="20" height="2.6" fill="#cf142b"/>
+          </svg>
+          <span class="code"> EN</span>
+        </button>
+        <button name="language" value="fr" type="submit" class="langbtn{% if LANGUAGE_CODE == 'fr' %} is-active{% endif %}" aria-label="Français">
+          <svg class="flag" viewBox="0 0 20 14" width="18" height="13" aria-hidden="true" focusable="false">
+            <rect width="6.667" height="14" fill="#0055A4"/>
+            <rect x="6.667" width="6.667" height="14" fill="#fff"/>
+            <rect x="13.333" width="6.667" height="14" fill="#EF4135"/>
+          </svg>
+          <span class="code"> FR</span>
+        </button>
       </form>
       <button class="menubtn" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="{% trans 'Otevřít menu' %}">{% trans "MENU" %}</button>
-      <button class="themebtn" id="themeToggle" type="button" aria-label="{% trans 'Přepnout světlý a tmavý režim' %}">{% trans "SVĚTLÝ REŽIM" %}</button>
+      <button class="themebtn" id="themeToggle" type="button" aria-label="{% trans 'Přepnout světlý a tmavý režim' %}">
+        <span class="themebtn-icon" aria-hidden="true">💡</span><span class="themebtn-label">{% trans "SVĚTLÝ REŽIM" %}</span>
+      </button>
     </div>
   </div>
 </nav>
